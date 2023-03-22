@@ -1,0 +1,93 @@
+.header {
+    background-color: transparent;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all;
+    transition-duration: 700ms;
+    z-index: 40;
+}
+
+.logo {
+    padding: 0.2rem 1rem 0.2rem 8rem;
+    font-family: "Chakra Petch";
+}
+
+.linklogo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.linklogo span {
+    color: #cf336e;
+    font-size: 1.5rem;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0.2rem 8rem 0.2rem 1rem;
+}
+
+.linkServicios {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+}
+.linkProyectos {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+}
+.linkSobreNosotros {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+}
+.linkPresupuesto{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+    background-color: rgba(180, 37, 75, 0.6);
+    padding:0.5rem 0.7rem;
+    border-radius: 0.75rem;
+}
+.linkPresupuesto:hover{
+    background-color: rgba(198, 5, 5, 0.6);
+    transition: all;
+    transition-duration: 300ms;
+}
+
+.header.scroll {
+    background-color: rgba(8, 31, 69, 0.859);
+    transition: all;
+    transition-duration: 1000ms;
+  }
