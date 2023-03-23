@@ -7,7 +7,7 @@ const UIProvider = ({children}) => {
 
     useEffect(() => {
       const handleScroll = () => {
-        const offset = window.scrollY
+        const offset = window.scrollY;
         if (offset > 0) {
           setScrolled(true)
         } else {
@@ -16,7 +16,7 @@ const UIProvider = ({children}) => {
       }
       window.addEventListener("scroll", handleScroll)
       return () => window.removeEventListener("scroll", handleScroll)
-    }, [])
+    }, []);
 
 
     return (

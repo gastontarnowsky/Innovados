@@ -52,9 +52,9 @@ const Presentation = () => {
                 </div>
                 <div className="divBoton">
                     <input
-                    type="submit"
-                    value="Enviar"
-                    className="botonPresupuesto"
+                        type="submit"
+                        value="Enviar"
+                        className="botonPresupuesto"
                     />
                 </div>
                 

@@ -1,17 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import UIProvider from '../contexts/UIProvider';
-import HomePage from '../pages/HomePage';
-
+import UIProvider from '../contexts/ui/UIProvider';
+import HomePage from '../pages/home/HomePage';
 
 const router = () => {
   return (
-    <UIProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <UIProvider>
         <Routes>
           <Route path={'/'} element={<HomePage />} />
         </Routes>
-      </BrowserRouter>
-    </UIProvider>
+      </UIProvider>
+    </BrowserRouter>
   )
 }
 
