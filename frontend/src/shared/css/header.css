@@ -1,17 +1,28 @@
 .header {
-    background-color: transparent;
-    height: 4rem;
-    width: 100%;
+    background-color: rgba(8, 31, 69, 0.859);
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     transition: all;
     transition-duration: 700ms;
     z-index: 40;
+    width: 83%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
+.sidebarLeft0{
+    left: 0;
+}
+.sidebarLeftFull{
+    left: -100%;
+}
+.navegacion {
+    display: block;
+}
 .logo {
-    padding: 0.2rem 1rem 0.2rem 8rem;
+    padding: 0.2rem 1rem 0.2rem 0rem;
     font-family: "Chakra Petch";
 }
 
@@ -29,63 +40,55 @@
     font-size: 1.5rem;
 }
 
-.navegacion {
-    display: flex;
-    justify-content: space-between;
-}
-
 .opciones {
-    display: flex;
-    gap: 2rem;
+    display: block;
     list-style: none;
-    padding: 0.2rem 8rem 0.2rem 1rem;
+    padding: 2rem 1rem 0.2rem 1rem;
 }
 
-.linkServicios {
+.links {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 2px;
-    color: #fff;
+    color: #eee;
     font-size: 1.2rem;
     line-height: 2rem;
     font-family: "Chakra Petch";
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    margin-top: 3rem;
+    font-family: "Open Sans", "sans-serif";
 }
 
-.linkProyectos {
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-family: "Chakra Petch";
+.links:hover {
+    color: #cf336e;
+    font-weight: 900;
+    transition: all;
+    transition-duration: 200ms;
+    transform: translateY(0.2rem);
+    transition: all 300ms ease-in-out;
 }
-
-.linkSobreNosotros {
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 2px;
-    color: #fff;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-family: "Chakra Petch";
-}
-
 .linkPresupuesto {
     text-decoration: none;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
     font-size: 1.2rem;
     line-height: 2rem;
     font-family: "Chakra Petch";
-    background-color: rgba(180, 37, 75, 0.6);
-    padding: 0.5rem 0.7rem;
+    background-color: #ca252a81;
+    padding: 0rem 1.3rem;
     border-radius: 0.75rem;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    margin-top: 3rem;
+    font-family: "Open Sans", "sans-serif";
 }
-
 .linkPresupuesto:hover {
-    background-color: rgba(198, 5, 5, 0.6);
+    background-color: #ca252aaa;
     transition: all;
     transition-duration: 300ms;
 }
@@ -93,5 +96,45 @@
 .header.scroll {
     background-color: rgba(8, 31, 69, 0.859);
     transition: all;
-    transition-duration: 1000ms;
+    transition-duration: 700ms;
+}
+
+
+@media (min-width: 768px){
+    .header{
+        padding: 0 4rem;
+    }
+    .linkPresupuesto{
+        margin-top: 4rem;
+    }
+    .links{
+        margin-top: 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .header{
+        background-color: transparent;
+        height: auto;
+        width: 100%;
+        padding: 0 8rem;
+    }
+    .sidebarLeftFull{
+        left: 0;
+    }
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .opciones{
+        display: flex;
+        gap: 2rem;
+        padding: 0.2rem 0rem 0.2rem 1rem;
+    }
+    .links{
+        margin-top: 0;
+    }
+    .linkPresupuesto{
+        margin-top: 0;
+    }
 }

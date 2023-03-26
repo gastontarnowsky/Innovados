@@ -1,3 +1,4 @@
+
 .contenedor {
     min-height: 100vh;
     background-color: #555;
@@ -8,22 +9,24 @@
   ),url("../../../assets/presentation2.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    padding: 0rem 1.5rem 0rem 1.5rem;
 }
 
 .titulos {
+    padding: 5rem 0rem 3rem 0rem;
     color: #fff;
-    padding: 12rem 8rem 4rem 8rem;
     display: inline-block;
 }
 .titulos h1 {
-    font-size: 6rem;
+    font-size: 4.1rem;
     line-height: 2rem;
     padding: 0;
     margin: 0;
     font-family: "Chakra Petch";
 }
 .titulos h3 {
-    font-size: 1.74rem;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0 0 0 1.7rem;
     font-family: "Chakra Petch";
@@ -31,92 +34,199 @@
 }
 
 .dividir {
-    padding: 1.5rem 8rem 1rem 8rem;
+    padding: 1.5rem 0rem 6rem 0rem;
     display: grid;
-    gap: 8rem;
+    gap: 2rem;
     align-items: top;
     grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-@media (min-width: 1024px) {
-    .dividir {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 .descripciones {
     color: #fff;
-    font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    font-family: "Open Sans", "sans-serif";
+    font-weight: 400;
     grid-column: span 1 / span 1; 
 }
 
 .formulario {
     background-color: rgba(0,0,0,0.4);
-    padding: 2rem 0rem 1rem 5rem;
+    padding: 1rem 2rem 1rem 2rem;
     border-radius: 0.75rem;
     grid-column: span 1 / span 1;
     margin-top: 1.7rem;
 }
 .tituloForm {
-
+    
+    border: none;
 }
-.tituloForm p {
-    font-size: 2rem;
+.legenda {
+    font-size: 1.7rem;
     color: #fff;
     font-weight: 900;
-    font-family: "Chakra Petch";
-    line-height: 1rem;
+    font-family: "Open Sans", "sans-serif";
     margin: 0rem;
-    padding: 1rem 0;
+    padding: 0rem 0;
 }
 
+.contenedorForm {
+    border: none;
+}
 .divInput {
     position: relative;
-    margin: 1rem 0 1rem 0;
+    margin: 0rem 0 0rem 0;
+    border: none;
 }
 .iconoInput {
     position: absolute;
     color: #f46368;
-    padding: 0.85rem 0 0 0.6rem;
+    top: 1.15rem;
+    left: 1.5rem;
 }
 .input {
     background-color: transparent;
     border: 1px solid #777;
-    width: 72.7%;
+    width: 100%;
     outline: none;
-    padding: 0.8rem 0.5rem 0.8rem 2rem;
+    padding: 0.8rem 1rem 0.8rem 1.9rem;
     color: #fff;
     border-radius: 0.75rem;
+    box-sizing: border-box;
 }
 .input::placeholder {
     color: #fff;
 }
 
 .divBoton {
-    display: flex;
-    justify-content: end;
-    padding: 0.5rem 5.5rem;
+    padding: 0.5rem 0rem;
+    border: none;
 }
 
 .botonPresupuesto {
     border: none;
-    background-color: rgba(23, 46, 129, 0.972);
+    background-color: #ca252a81;
     color:#fff ;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.2rem;
     padding: 1.2rem 1rem;
     border-radius: 0.75rem;
-    width: 50%;
-    font-family: "Chakra Petch";
+    font-family: "Open Sans", "sans-serif";
     line-height: 0;
+    width: 100%;
 }
 .botonPresupuesto:hover{
-    background-color: rgba(31, 58, 155, 0.972);
+    background-color: #ca252aaa;
     cursor: pointer;
     transition: all;
     transition-duration: 300ms;
 }
+.contenedorTipos {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 4rem 0 0 0;
+    gap: 1rem;
+}
+.tiposDiv{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 1 / span 1;
+    transition: all 500ms;
+}
+.tiposDiv:hover {
+    transform: scale(1.2); 
+    transition: all 500ms; 
+}
+.tiposDiv div{
+    height: 3.8rem;
+}
 
+.img0 {
+    opacity: 85%;
+    filter: grayscale(20%);
+}
+.img1 {
+    width: 4rem;
+}
+.img2 {
+    transform: translatey(-0.15rem);
+    width: 4.2rem;
+}
+.img3 {
+    width: 3.9rem;
+}
+.img4 {
+    transform: translatey(0.15rem);
+    width: 4.4rem;
+}
+.img5 {
+    transform: translatey(0.1rem);
+    width: 3.9rem;
+}
+.img6 {
+    width: 3.9rem;
+}
+
+.tiposDiv p{
+    padding: 0;
+    font-family: "Open Sans", "sans-serif";
+    font-size: 0.8rem;
+    font-weight: 400;
+    transition: all 300ms;
+}
+.tiposDiv:hover p{
+    font-size: 0.85rem;
+    transition: all 100ms;
+}
+@media (min-width: 768px){
+    .contenedor{
+        padding: 0rem 4rem 0rem 4rem;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedor{
+        padding: 0rem 8rem 0rem 8rem;
+    }
+    .legenda {
+        font-size: 1rem;
+    }
+    .dividir {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .titulos {
+        padding: 12rem 0rem 4rem 0rem;
+        color: #fff;
+        display: inline-block;
+    }
+    .titulos h1 {
+        font-size: 6rem;
+        line-height: 2rem;
+        padding: 0;
+        margin: 0;
+        font-family: "Chakra Petch";
+    }
+    .titulos h3 {
+        font-size: 1.74rem;
+        margin: 0;
+        padding: 0 0 0 1.7rem;
+        font-family: "Chakra Petch";
+        color: #cf336e;
+    }
+    .descripciones {
+        font-size: 1.4rem;
+    }
+    .contenedorTipos {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+@media (min-width: 1280px) {
+    .legenda {
+        font-size: 1.7rem;
+    }
+    .dividir {
+        gap: 8rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

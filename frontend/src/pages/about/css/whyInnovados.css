@@ -1,0 +1,45 @@
+.contenedorWhy {
+    display: grid;
+    padding: 5rem 8rem 0 8rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.izquierda {
+    padding: 0 4rem 0 0;
+}
+.izquierda h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgba(12, 47, 103, 0.821);
+}
+.izquierda p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.derecha {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.imagen {
+    width: 6rem;
+}
+.derechaDiv{
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    background-color: #ccc;
+    box-shadow: 5px 5px 10px 0.2px rgba(12, 47, 103, 0.821);
+}
+.derechaP{ 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}

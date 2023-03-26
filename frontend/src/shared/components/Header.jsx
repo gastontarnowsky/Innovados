@@ -6,9 +6,9 @@ import UIContext from '../../contexts/ui/UIContext'
 import '../css/header.css';
 
 export const Header = () => {
-  const { scrolled } = useContext(UIContext)
+  const { scrolled, sidebar } = useContext(UIContext)
   return (
-    <header className={`header ${scrolled ? 'scroll' : ''}`}>
+    <header className={`header ${sidebar ? 'sidebarLeft0' : 'sidebarLeftFull'} ${scrolled ? 'scroll' : ''}`}>
       <nav className='navegacion'>
 
         <ul className='logo'>
@@ -19,17 +19,17 @@ export const Header = () => {
 
         <ul className='opciones'>
           <li>
-            <Link className='linkServicios'>
+            <Link className='links'>
               Servicios
             </Link>
           </li>
           <li>
-            <Link className='linkProyectos'>
+            <Link className='links'>
               Proyectos
             </Link>
           </li>
           <li>
-            <Link className='linkSobreNosotros'>
+            <Link className='links'>
               Sobre Nosotros
             </Link>
           </li>
