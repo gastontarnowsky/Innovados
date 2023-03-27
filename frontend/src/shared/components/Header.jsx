@@ -12,8 +12,8 @@ export const Header = () => {
       <nav className='navegacion'>
 
         <ul className='logo'>
-          <Link to='/' className='linklogo'>
-            Innova<span>dos</span>
+          <Link to='/' className='linkLogo'>
+            Innova<span className='linklogospan'>dos</span>
           </Link>
         </ul>
 

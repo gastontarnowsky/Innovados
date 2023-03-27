@@ -14,9 +14,9 @@ const WhyInnovados = () => {
     <div className="contenedorWhy">
         <div className="izquierda">
             <h1>¿Por qué Innovados?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque laboriosam magnam, adipisci, voluptatem harum veritatis quibusdam tenetur exercitationem ratione numquam, itaque cum aliquam aspernatur ipsam minima amet totam nihil dolorem!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore deserunt dignissimos sapiente, facere dolore at numquam, veritatis blanditiis voluptas soluta officiis rerum distinctio porro perferendis amet repellendus pariatur quia.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut ipsa beatae accusamus voluptatibus assumenda blanditiis? Animi fuga aut cum perferendis, quae laboriosam laudantium dolorum harum repellat mollitia quia quidem eius!</p>
+            <p>Nuestra empresa se dedica a ofrecer soluciones de software personalizadas y de alta calidad, con un enfoque exclusivo en el cliente. Además, nos aseguramos de cumplir con los plazos, brindamos soporte y mantenimiento, para asegurarnos de que nuestros clientes estén satisfechos con el producto final.</p>
+            <p>En Innovados, establecemos relaciones de confianza y colaboración con nuestros clientes. Nos aseguramos de entender sus objetivos y necesidades a fondo para poder ofrecer soluciones que no solo cumplan, sino que superen sus expectativas. </p>
+            <p>También podés acceder a nuestro panel de servicios donde vas a encontrar herramientas ya desarrolladas y customizables para implementar en tu negocio y aumentar tu productividad.</p>
         </div>
 
         <div className="derecha">
@@ -107,7 +107,7 @@ const WhyInnovados = () => {
         {/*** OCTAVA Tarjeta ***/}
         <div className="derechaDiv">
             <div className="">
-                <img src={search} alt="Ilustración de Optimización" className="imagen"/>
+                <img src={search} alt="Ilustración de Optimización" className="imagenSEO"/>
             </div>
             <div className=''>
                 <p className="derechaP">

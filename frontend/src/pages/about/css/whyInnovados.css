@@ -1,45 +1,71 @@
 .contenedorWhy {
     display: grid;
-    padding: 5rem 8rem 0 8rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 3rem 2rem 6rem 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .izquierda {
-    padding: 0 4rem 0 0;
+    padding: 0 0rem 0 0;
 }
 .izquierda h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: rgba(12, 47, 103, 0.821);
+    color: #0c2f67d1;
+    font-size: 1.6rem;
 }
+
 .izquierda p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
 }
 
 .derecha {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
 }
 
 .imagen {
     width: 6rem;
 }
-.derechaDiv{
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    color: #222;
-    background-color: #ccc;
-    box-shadow: 5px 5px 10px 0.2px rgba(12, 47, 103, 0.821);
+.imagenSEO{
+    width: 5rem;
+    padding-left: 1rem;
 }
+.derechaDiv{
+    border-radius: 1rem;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+    color: #555;
+    width: 80%;
+}
+
 .derechaP{ 
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+
+@media (min-width: 768px){
+    .izquierda h1{
+        font-size: 2rem;
+    }
+    .derechaDiv {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .contenedorWhy{
+        padding: 5rem 8rem 6rem 8rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .derechaDiv{
+        margin: 2.5rem 2rem 0 2rem;
+        justify-content: center;
+    }
 }

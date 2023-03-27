@@ -1,23 +1,27 @@
 .seccion{
-    padding: 3rem 8rem;
+    padding: 3rem 0rem;
 }
 .titulo{
-    padding: 0 10rem;
-    font-size: 1.2rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: #444
+    color: #444;
 }
-
 .contenedorCajas {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin: 3rem 0;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 1rem 0;
 }
-
 .cajas{
-    margin-top: 1rem;
-    padding: 0 3rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+.cajas p {
+    font-size: 0.9rem;
+    font-family: "Open Sans", "sans-serif";
+    color: #666;
+    font-weight: 400;
 }
 .tituloImagen{
     display: flex;
@@ -33,18 +37,12 @@
 .tituloImagen img{
     width: 3rem;
     height: 3rem;
+    filter:contrast(90%);
 }
 .tituloImagen2 img{
     width: 3.5rem;
     height: 3.5rem;
 }
-.cajas p {
-    font-size: 1.05rem;
-    font-family: "Open Sans", "sans-serif";
-    color: #666;
-    font-weight: 400;
-}
-
 .imagenPresupuesto{
     min-height: 30vh;
     background-image: linear-gradient(
@@ -54,25 +52,23 @@
   ),url("../../../assets/presentation.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4rem 19rem 2.9rem 19rem;
+    padding: 2rem 0rem 2.9rem 0rem;
 }
 
 .imagenPresupuesto h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     color: #fff;
     font-family: "Open Sans", "sans-serif";
     font-weight: 400;
 }
-
 .imagenPresupuesto p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
-
 .imagenPresupuesto button {
     text-decoration: none;
     font-weight: 500;
@@ -97,4 +93,50 @@
     transition: all;
     transition-duration: 300ms;
     cursor: pointer;
+}
+
+
+@media (min-width: 768px){
+    .seccion{
+        padding: 3rem 2rem;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    .contenedorCajas{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 3rem 0;
+    }
+    .cajas{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seccion{
+        padding: 3rem 8rem;
+
+    }
+    .titulo{
+        padding: 0 10rem;
+        font-size: 1.2rem;
+    }
+    .contenedorCajas{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .cajas{
+        padding: 0 2rem;
+    }
+    .cajas p{
+        font-size: 1.05rem;
+    }
+    .imagenPresupuesto{
+        padding: 2.5rem 19rem 1.5rem 19rem;
+    }
+    .imagenPresupuesto h1{
+        font-size: 2.5rem;
+    }
+    .imagenPresupuesto p{
+        font-size: 1.2rem;
+    }
 }

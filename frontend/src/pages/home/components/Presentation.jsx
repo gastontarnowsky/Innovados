@@ -33,19 +33,19 @@ const Presentation = () => {
                         <div className="contenedorImg">
                             <img src={ERP} className="img0 img4" />
                         </div>
-                        <p>Planificación de Recursos Empresariales</p>
+                        <p>Recursos Empresariales</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
                             <img src={CRM} className="img0 img3" />
                         </div>
-                        <p>Gestión de Relación con el Cliente</p>
+                        <p>Relación con el Cliente</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
                             <img src={apps} className="img0 img5" />
                         </div>
-                        <p>Apps</p>
+                        <p>APPs</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
@@ -73,6 +73,7 @@ const Presentation = () => {
                             type="email" 
                             placeholder="Email"
                             className="input"
+                            autoComplete="off"
                         />
                     </fieldset>
                     <fieldset className="divInput">

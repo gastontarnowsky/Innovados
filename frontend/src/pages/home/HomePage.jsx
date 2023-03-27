@@ -1,5 +1,5 @@
 import "./css/homePage.css";
-import { Header } from "../../shared/components";
+import { Footer, Header } from "../../shared/components";
 import {About} from './components';
 import Presentation from "./components/Presentation";
 import {  RiMenuFill, RiCloseLine } from "react-icons/ri";
@@ -16,6 +16,7 @@ const HomePage = () => {
         </button>
         <Presentation />
         <About />
+        <Footer />
     </div>
   )
 }

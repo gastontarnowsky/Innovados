@@ -1,0 +1,85 @@
+.footer {
+    background-color: #191d24;
+    height: 20vh;
+    display: block;
+    padding: 4rem 0rem;
+}
+.logoFooter p {
+    color: #bbb;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Open Sans", "sans-serif";
+}
+.logoFooter span {
+    color: #ca252aaa;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.linksDivFooter {
+    display: block;
+    gap: 1.3rem;
+}
+
+.linksFooter {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    font-family: "Open Sans", "sans-serif";
+}
+
+.linksFooter:hover {
+    color: #ca252aaa;
+    transition: all;
+    transition-duration: 200ms;
+    transform: translateY(0.2rem);
+    transition: all 300ms ease-in-out;
+}
+
+.linkPresupuestoFooter{
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-family: "Chakra Petch";
+    background-color: #ca252a81;
+    padding: 0rem 1.3rem;
+    border-radius: 0.75rem;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 300ms ease-in-out;
+    font-family: "Open Sans", "sans-serif";
+    border: none;
+}
+
+.linkPresupuestoFooter:hover {
+    background-color: #ca252aaa;
+    transition: all;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+
+@media (min-width: 1024px) {
+    .footer{
+        padding: 4rem 8rem;
+        display: flex;
+        justify-content:space-between;
+        height: 6vh;
+    }
+    .linksDivFooter{
+        display: flex;
+    }
+}

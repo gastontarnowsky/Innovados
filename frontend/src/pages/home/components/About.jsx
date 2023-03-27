@@ -20,7 +20,7 @@ export const About = () => {
               <img src={wwwIcon} />
               <h3>Sitios Web</h3>
             </div>
-            <p>Creamos sitios web personalizados y atractivos, nos adaptamos a cualquier rama, blogs, portales de noticias y hasta sistemas empresariales. Además, nos mantenemos actualizados con las últimas tecnologías para garantizar que nuestros sitios web sean modernos y funcionales.</p>
+            <p>Creamos sitios web personalizados y atractivos, nos adaptamos a cualquier rama: blogs, portales de noticias y hasta sistemas empresariales. Además, nos mantenemos actualizados con las últimas tecnologías para garantizar que nuestros sitios web sean modernos y funcionales.</p>
           </div>
           <div className="cajas">
             <div className="tituloImagen tituloImagen2">

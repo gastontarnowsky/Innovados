@@ -26,7 +26,7 @@
     font-family: "Chakra Petch";
 }
 
-.linklogo {
+.linkLogo {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -35,9 +35,9 @@
     font-size: 1.5rem;
 }
 
-.linklogo span {
-    color: #cf336e;
-    font-size: 1.5rem;
+.linkLogo span {
+    color: #ca252ad9;
+    font-size: 1.6rem;
 }
 
 .opciones {
@@ -48,12 +48,11 @@
 
 .links {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 2px;
     color: #eee;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
-    font-family: "Chakra Petch";
     display: flex;
     align-items: center;
     transition: all 300ms ease-in-out;
@@ -63,7 +62,6 @@
 
 .links:hover {
     color: #cf336e;
-    font-weight: 900;
     transition: all;
     transition-duration: 200ms;
     transform: translateY(0.2rem);
@@ -74,7 +72,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     font-family: "Chakra Petch";
     background-color: #ca252a81;
@@ -86,11 +84,13 @@
     transition: all 300ms ease-in-out;
     margin-top: 3rem;
     font-family: "Open Sans", "sans-serif";
+    border: none;
 }
 .linkPresupuesto:hover {
     background-color: #ca252aaa;
     transition: all;
     transition-duration: 300ms;
+    cursor: pointer;
 }
 
 .header.scroll {
@@ -128,8 +128,8 @@
     }
     .opciones{
         display: flex;
-        gap: 2rem;
-        padding: 0.2rem 0rem 0.2rem 1rem;
+        gap: 1.4rem;
+        padding: 0rem 0rem 0rem 1rem;
     }
     .links{
         margin-top: 0;
