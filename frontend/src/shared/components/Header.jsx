@@ -29,9 +29,9 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link className='links'>
+            <a href="#sobrenosotros" className='links'>
               Sobre Nosotros
-            </Link>
+            </a>
           </li>
           <li>
             <Link className='linkPresupuesto'>

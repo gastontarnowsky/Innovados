@@ -11,7 +11,7 @@ import search from "../../../assets/whyInnovados/search.svg"
 
 const WhyInnovados = () => {
   return (
-    <div className="contenedorWhy">
+    <div className="contenedorWhy" id="sobrenosotros">
         <div className="izquierda">
             <h1>¿Por qué Innovados?</h1>
             <p>Nuestra empresa se dedica a ofrecer soluciones de software personalizadas y de alta calidad, con un enfoque exclusivo en el cliente. Además, nos aseguramos de cumplir con los plazos, brindamos soporte y mantenimiento, para asegurarnos de que nuestros clientes estén satisfechos con el producto final.</p>
@@ -69,54 +69,52 @@ const WhyInnovados = () => {
             </div>
 ***/}
             {/*** QUINTA Tarjeta ***/}
-        <div className="derechaDiv">
-            <div className="">
-                <img src={responsive} alt="Ilustración de Adaptación" className="imagen" />
+            <div className="derechaDiv">
+                <div className="">
+                    <img src={responsive} alt="Ilustración de Adaptación" className="imagen" />
+                </div>
+                <div className=''>
+                    <p className="derechaP">
+                        Páginas Web adaptativas
+                    </p>
+                </div>
             </div>
-            <div className=''>
-                <p className="derechaP">
-                    Páginas Web adaptativas
-                </p>
-            </div>
-        </div>
 
-        {/*** SEXTA Tarjeta ***/}
-        <div className="derechaDiv">
-            <div className="">
-                <img src={diseño} alt="Ilustración de diseño" className="imagen"/>
+            {/*** SEXTA Tarjeta ***/}
+            <div className="derechaDiv">
+                <div className="">
+                    <img src={diseño} alt="Ilustración de diseño" className="imagen"/>
+                </div>
+                <div className=''>
+                    <p className="derechaP">
+                        Diseño intuitivo y amigable
+                    </p>
+                </div>
             </div>
-            <div className=''>
-                <p className="derechaP">
-                    Diseño intuitivo y amigable
-                </p>
-            </div>
-        </div>
 
-        {/*** SEPTIMA Tarjeta ***/}
-        <div className="derechaDiv">
-            <div className="">
-                <img src={avion} alt="Ilustración de Velocidad" className="imagen"/>
+            {/*** SEPTIMA Tarjeta ***/}
+            <div className="derechaDiv">
+                <div className="">
+                    <img src={avion} alt="Ilustración de Velocidad" className="imagen"/>
+                </div>
+                <div className=''>
+                    <p className="derechaP">
+                        Velocidad y funcionalidad
+                    </p>
+                </div> 
             </div>
-            <div className=''>
-                <p className="derechaP">
-                    Velocidad y funcionalidad
-                </p>
-            </div> 
-        </div>
 
-        {/*** OCTAVA Tarjeta ***/}
-        <div className="derechaDiv">
-            <div className="">
-                <img src={search} alt="Ilustración de Optimización" className="imagenSEO"/>
+            {/*** OCTAVA Tarjeta ***/}
+            <div className="derechaDiv">
+                <div className="">
+                    <img src={search} alt="Ilustración de Optimización" className="imagenSEO"/>
+                </div>
+                <div className=''>
+                    <p className="derechaP">
+                        Posicionamiento SEO
+                    </p>
+                </div>
             </div>
-            <div className=''>
-                <p className="derechaP">
-                    Posicionamiento SEO
-                </p>
-            </div>
-        </div>
-
-
         </div>
     </div>
   )

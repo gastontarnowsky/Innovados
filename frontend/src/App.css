@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #d9d7d2;
   padding: 0;

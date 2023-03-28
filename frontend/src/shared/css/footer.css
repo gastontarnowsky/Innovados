@@ -1,8 +1,12 @@
 .footer {
     background-color: #191d24;
     height: 20vh;
-    display: block;
-    padding: 4rem 0rem;
+    display: flex;
+    justify-content:space-between;
+    padding: 4rem 2rem;
+}
+.logoFooter{
+    text-align: center;
 }
 .logoFooter p {
     color: #bbb;
@@ -17,7 +21,12 @@
     margin: 0;
     font-size: 1.5rem;
 }
-
+.imgFooter{
+    width: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    opacity: 55%;
+}
 .linksDivFooter {
     display: block;
     gap: 1.3rem;
@@ -31,8 +40,9 @@
     font-size: 0.9rem;
     line-height: 2rem;
     font-family: "Chakra Petch";
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
+    padding-top: 0.2rem;
     transition: all 300ms ease-in-out;
     font-family: "Open Sans", "sans-serif";
 }
@@ -53,7 +63,7 @@
     font-size: 0.9rem;
     line-height: 2rem;
     font-family: "Chakra Petch";
-    background-color: #ca252a81;
+    background-color: transparent;
     padding: 0rem 1.3rem;
     border-radius: 0.75rem;
     display: block;
@@ -61,7 +71,8 @@
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
     font-family: "Open Sans", "sans-serif";
-    border: none;
+    border: 1px solid #ca252a81;
+    margin-top: 0.3rem;
 }
 
 .linkPresupuestoFooter:hover {
@@ -71,13 +82,18 @@
     cursor: pointer;
 }
 
-
+@media (min-width: 768px){
+    .footer{
+        padding: 4rem 4rem;
+    }
+}
 @media (min-width: 1024px) {
     .footer{
         padding: 4rem 8rem;
-        display: flex;
-        justify-content:space-between;
         height: 6vh;
+    }
+    .imgFooter{
+        display: none;
     }
     .linksDivFooter{
         display: flex;

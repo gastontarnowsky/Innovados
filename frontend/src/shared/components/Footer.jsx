@@ -1,4 +1,5 @@
 import "../css/footer.css"
+import sitioweb from "../../assets/assetsPresentation/WWW.png"
 
 export const Footer = () => {
 
@@ -8,6 +9,9 @@ export const Footer = () => {
 
             <div className="logoFooter">
                 <p>Innova<span>dos</span></p>
+                <div className="contenedorImgFooter">
+                            <img src={sitioweb} className="imgFooter"  />
+                </div>
             </div>
 
             <div className="linksDivFooter">

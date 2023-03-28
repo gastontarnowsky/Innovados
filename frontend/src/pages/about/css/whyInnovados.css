@@ -14,10 +14,14 @@
 }
 
 .izquierda p {
+    padding: 1rem 2rem 0 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #555;
+}
+.izquierda p:first-of-type{
+    padding-top: 0;
 }
 
 .derecha {

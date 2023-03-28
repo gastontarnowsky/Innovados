@@ -1,11 +1,11 @@
 import "../css/presentation.css"
 import { RiMailLine, RiAccountBoxLine, RiWhatsappLine } from "react-icons/ri";
-import sitioweb from "../../../assets/www.png"
-import ecommerce from "../../../assets/ecommerce.png"
-import CMS from "../../../assets/CMSRed.png"
-import CRM from "../../../assets/CRMRedMinimalista.png"
-import ERP from "../../../assets/ERPRed.png"
-import apps from "../../../assets/appsRed.png"
+import sitioweb from "../../../assets/assetsPresentation/WWW.png"
+import ecommerce from "../../../assets/assetsPresentation/ecommerce.png"
+import CMS from "../../../assets/assetsPresentation/CMS2.png"
+import ERP from "../../../assets/assetsPresentation/ERP2.png"
+import CRM from "../../../assets/assetsPresentation/CRM2.png"
+import apps from "../../../assets/assetsPresentation/Apps.png"
 const Presentation = () => {
   return (
     <main className="contenedor">
@@ -19,37 +19,37 @@ const Presentation = () => {
                 <div className="contenedorTipos">
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={sitioweb} className="img0 img1"  />
+                            <img src={sitioweb} className="img1"  />
                         </div>
                         <p>Sitios Web</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={CMS} className="img0 img2" />
+                            <img src={CMS} className="img2" />
                         </div>
                         <p>Gestión de Contenido</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={ERP} className="img0 img4" />
+                            <img src={ERP} className="img3" />
                         </div>
                         <p>Recursos Empresariales</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={CRM} className="img0 img3" />
+                            <img src={CRM} className="img4" />
                         </div>
                         <p>Relación con el Cliente</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={apps} className="img0 img5" />
+                            <img src={apps} className="img5" />
                         </div>
-                        <p>APPs</p>
+                        <p>Aplicaciones</p>
                     </div>
                     <div className="tiposDiv">
                         <div className="contenedorImg">
-                            <img src={ecommerce} className="img0 img6" />
+                            <img src={ecommerce} className="img6" />
                         </div>
                         <p>E-commerce</p>
                     </div>
@@ -103,7 +103,6 @@ const Presentation = () => {
                             className="botonPresupuesto"
                         />
                     </fieldset>
-                    
                 </fieldset>
             </form>
         </div>

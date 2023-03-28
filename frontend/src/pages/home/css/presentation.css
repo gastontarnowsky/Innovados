@@ -151,40 +151,39 @@ input:-webkit-autofill {
     align-items: center;
     grid-column: span 1 / span 1;
     transition: all 500ms;
-    filter: grayscale(20%) ;
+    opacity: 65%;
 }
 .tiposDiv:hover {
     transform: scale(1.2); 
     transition: all 500ms; 
-    filter: grayscale(10%);
+    opacity: 100%;
 }
 .tiposDiv div{
     height: 3.8rem;
 }
 
-.img0 {
-    opacity: 85%;
-}
+
 .img1 {
     width: 4rem;
 }
 .img2 {
-    transform: translatey(-0.15rem);
-    width: 4.2rem;
+    transform: translatey(0rem);
+    width: 4rem;
 }
 .img3 {
     width: 3.9rem;
 }
 .img4 {
-    transform: translatey(0.15rem);
-    width: 4.4rem;
+    transform: translatey(0rem);
+    width: 3.9rem;
 }
 .img5 {
     transform: translatey(0.1rem);
     width: 3.9rem;
 }
 .img6 {
-    width: 3.9rem;
+    transform: translatey(0.2rem);
+    width: 3.8rem;
 }
 
 .tiposDiv p{
@@ -237,6 +236,7 @@ input:-webkit-autofill {
     .descripciones {
         grid-column: span 7 / span 1; 
         font-size: 1.2rem;
+        padding-right: 1.5rem;
     }
     .contenedorTipos {
         grid-template-columns: repeat(6, minmax(0, 1fr));
