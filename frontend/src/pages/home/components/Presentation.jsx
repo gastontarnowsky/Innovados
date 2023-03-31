@@ -1,3 +1,7 @@
+
+import { useContext } from 'react';
+import UIContext from "../../../contexts/ui/UIContext";
+
 import "../css/presentation.css"
 import { RiMailLine, RiAccountBoxLine, RiWhatsappLine } from "react-icons/ri";
 import sitioweb from "../../../assets/assetsPresentation/WWW.png"
@@ -6,7 +10,9 @@ import CMS from "../../../assets/assetsPresentation/CMS2.png"
 import ERP from "../../../assets/assetsPresentation/ERP2.png"
 import CRM from "../../../assets/assetsPresentation/CRM2.png"
 import apps from "../../../assets/assetsPresentation/Apps.png"
+
 const Presentation = () => {
+    const { handleColor1, handleColor2, handleColor3, handleColor4, handleColor5, handleColor6 } = useContext(UIContext);
   return (
     <main className="contenedor">
         <div className="titulos">
@@ -16,43 +22,44 @@ const Presentation = () => {
         <div className="dividir">
             <div className="descripciones">
                 <p>Somos una empresa de desarrollo software donde abarcamos distintas areas y especialidades de la programación para poder ofrecerte el mejor producto y servicio.</p>
+                <p className="pTipos">Elegí la solución que más se adecúa a tu empresa</p>
                 <div className="contenedorTipos">
-                    <div className="tiposDiv">
+                    <a href="#sitiosweb" className="tiposDiv" onClick={handleColor1}>
                         <div className="contenedorImg">
-                            <img src={sitioweb} className="img1"  />
+                            <img src={sitioweb} className="img1" alt="icono sitio web www" />
                         </div>
                         <p>Sitios Web</p>
-                    </div>
-                    <div className="tiposDiv">
+                    </a>
+                    <a href="#CMS" className="tiposDiv" onClick={handleColor2}>
                         <div className="contenedorImg">
-                            <img src={CMS} className="img2" />
+                            <img src={CMS} className="img2" alt="icono Gestión de Contenido CMS" />
                         </div>
                         <p>Gestión de Contenido</p>
-                    </div>
-                    <div className="tiposDiv">
+                    </a>
+                    <a href="#ERP" className="tiposDiv" onClick={handleColor3}>
                         <div className="contenedorImg">
-                            <img src={ERP} className="img3" />
+                            <img src={ERP} className="img3" alt="icono Recursos Empresariales ERP" />
                         </div>
                         <p>Recursos Empresariales</p>
-                    </div>
-                    <div className="tiposDiv">
+                    </a>
+                    <a href="#CRM" className="tiposDiv" onClick={handleColor4}>
                         <div className="contenedorImg">
-                            <img src={CRM} className="img4" />
+                            <img src={CRM} className="img4" alt="icono Relación con el cliente CRM" />
                         </div>
                         <p>Relación con el Cliente</p>
-                    </div>
-                    <div className="tiposDiv">
+                    </a>
+                    <a href="#APPS" className="tiposDiv" onClick={handleColor5}>
                         <div className="contenedorImg">
-                            <img src={apps} className="img5" />
+                            <img src={apps} className="img5" alt="icono Aplicaciones móviles APPS" />
                         </div>
                         <p>Aplicaciones</p>
-                    </div>
-                    <div className="tiposDiv">
+                    </a>
+                    <a href="#ECommerce" className="tiposDiv" onClick={handleColor6}>
                         <div className="contenedorImg">
-                            <img src={ecommerce} className="img6" />
+                            <img src={ecommerce} className="img6" alt="icono e-commerce" />
                         </div>
                         <p>E-commerce</p>
-                    </div>
+                    </a>
                 </div>
             </div>
             <form 

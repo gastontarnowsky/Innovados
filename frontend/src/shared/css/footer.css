@@ -1,5 +1,5 @@
 .footer {
-    background-color: #191d24;
+    background-color: var(--footer-bg);
     height: 20vh;
     display: flex;
     justify-content:space-between;
@@ -16,7 +16,7 @@
     font-family: "Open Sans", "sans-serif";
 }
 .logoFooter span {
-    color: #ca252aaa;
+    color: var(--logo-span);
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
@@ -48,7 +48,7 @@
 }
 
 .linksFooter:hover {
-    color: #ca252aaa;
+    color: var(--logo-span);
     transition: all;
     transition-duration: 200ms;
     transform: translateY(0.2rem);
@@ -71,12 +71,13 @@
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
     font-family: "Open Sans", "sans-serif";
-    border: 1px solid #ca252a81;
+    border: 1px solid var(--boton-presupuesto);
     margin-top: 0.3rem;
 }
 
 .linkPresupuestoFooter:hover {
-    background-color: #ca252aaa;
+    border: 1px solid transparent;
+    background-color: var(--boton-presupuesto);
     transition: all;
     transition-duration: 300ms;
     cursor: pointer;

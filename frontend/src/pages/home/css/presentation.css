@@ -18,18 +18,19 @@
     display: inline-block;
 }
 .titulos h1 {
-    font-size: 4.1rem;
+    font-size: 3.7rem;
     line-height: 2rem;
+    font-weight: 500;
     padding: 0;
     margin: 0;
-    font-family: "Chakra Petch";
+    font-family: "Poppins", "sans-serif";
 }
 .titulos h3 {
-    font-size: 1.1rem;
+    font-size: 1.04rem;
     margin: 0;
     padding: 0 0 0 1.7rem;
-    font-family: "Chakra Petch";
-    color: #ca252a;
+    font-family: "Poppins", "sans-serif";
+    color: var(--h3-presentation);
 }
 
 .dividir {
@@ -41,7 +42,7 @@
 
 .descripciones p{
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: "Open Sans", "sans-serif";
     padding-top: 0.2rem;
     font-weight: 400;
@@ -79,14 +80,9 @@
 }
 .iconoInput {
     position: absolute;
-    color: #f46368;
+    color: var(--icon-form-presentation);
     top: 0.95rem;
     left: 0.7rem;
-}
-input:-webkit-autofill {
-
-    background-color:  #be2323;
-
 }
 .input {
     background-color: transparent;
@@ -102,17 +98,6 @@ input:-webkit-autofill {
     color: #fff;
     font-size: 0.8rem;
 }
-.input:-webkit-autofill {
-   -webkit-box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0);
-   box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0.1);
-   background-color: transparent;
-}
-.input:-webkit-autofill:focus{
-    
-   -webkit-box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0.1);
-   box-shadow: inset 0 0 0px 1000px rgba(0, 0, 0, 0.1);
-   background-color: transparent;
-}
 
 .divBoton {
     padding: 0.5rem 0rem;
@@ -121,7 +106,7 @@ input:-webkit-autofill {
 
 .botonPresupuesto {
     border: none;
-    background-color: #ca252a81;
+    background-color: var(--boton-presupuesto);
     color:#fff ;
     font-weight: 400;
     font-size: 1.05rem;
@@ -130,18 +115,16 @@ input:-webkit-autofill {
     font-family: "Open Sans", "sans-serif";
     line-height: 0;
     width: 100%;
-}
-.botonPresupuesto:hover{
-    background-color: #ca252aaa;
     cursor: pointer;
-    transition: all;
-    transition-duration: 300ms;
+}
+
+.pTipos{
+    margin-top: 3.5rem;
 }
 .contenedorTipos {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    padding: 4rem 0 0 0;
     gap: 1rem;
 }
 .tiposDiv{
@@ -152,44 +135,22 @@ input:-webkit-autofill {
     grid-column: span 1 / span 1;
     transition: all 500ms;
     opacity: 65%;
+    text-decoration: none;
 }
 .tiposDiv:hover {
     transform: scale(1.2); 
     transition: all 500ms; 
     opacity: 100%;
+    cursor: pointer;
 }
 .tiposDiv div{
-    height: 3.8rem;
-}
-
-
-.img1 {
-    width: 4rem;
-}
-.img2 {
-    transform: translatey(0rem);
-    width: 4rem;
-}
-.img3 {
-    width: 3.9rem;
-}
-.img4 {
-    transform: translatey(0rem);
-    width: 3.9rem;
-}
-.img5 {
-    transform: translatey(0.1rem);
-    width: 3.9rem;
-}
-.img6 {
-    transform: translatey(0.2rem);
-    width: 3.8rem;
+    height: 3.3rem;
 }
 
 .tiposDiv p{
     padding: 0;
     font-family: "Open Sans", "sans-serif";
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 400;
     transition: all 300ms;
 }
@@ -197,6 +158,29 @@ input:-webkit-autofill {
     font-size: 0.85rem;
     transition: all 100ms;
 }
+.img1 {
+    width: 3.5rem;
+}
+.img2 {
+    transform: translatey(0rem);
+    width: 3.5rem;
+}
+.img3 {
+    width: 3.4rem;
+}
+.img4 {
+    transform: translatey(0rem);
+    width: 3.4rem;
+}
+.img5 {
+    transform: translatey(0.1rem);
+    width: 3.4rem;
+}
+.img6 {
+    transform: translatey(0.2rem);
+    width: 3.3rem;
+}
+
 
 @media (min-width: 768px){
     .contenedor{
@@ -208,41 +192,56 @@ input:-webkit-autofill {
 }
 @media (min-width: 1024px) {
     .contenedor{
-        padding: 0rem 8rem 0rem 8rem;
+        padding: 0rem 4rem 0rem 4rem;
     }
     .legenda {
         font-size: 1rem;
     }
     .dividir {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 4rem;
         
     }
     .titulos {
-        padding: 10rem 0rem 4rem 0rem;
-        color: #fff;
-        display: inline-block;
+        padding: 8rem 0rem 4rem 0rem;
     }
     .titulos h1 {
-        font-size: 6rem;
+        font-size: 5.2rem;
         line-height: 2rem;
         padding: 0;
         margin: 0;
+        opacity: 85%;
     }
     .titulos h3 {
-        font-size: 1.74rem;
+        font-size: 1.54rem;
         margin: 0;
         padding: 0 0 0 1.7rem;
+        opacity: 85%;
     }
     .descripciones {
         grid-column: span 7 / span 1; 
         font-size: 1.2rem;
-        padding-right: 1.5rem;
+    }
+    .descripciones p{
+        font-size: 1.1rem;
+    }
+    .formulario {
+        padding: 0.7rem 2rem 0.5rem 2rem;
+        grid-column: span 5 / span 1;
+        margin-top: 1.7rem;
     }
     .contenedorTipos {
         grid-template-columns: repeat(6, minmax(0, 1fr));
     }
+    
+    .tiposDiv p{
+        font-size: 0.8rem;
+    }
 }
 @media (min-width: 1280px) {
+    .contenedor{
+        padding: 0rem 8rem 0rem 8rem;
+    }
     .legenda {
         font-size: 1.4rem;
     }
@@ -251,13 +250,13 @@ input:-webkit-autofill {
         gap: 4rem;
     }
     .formulario {
-        background-color: rgba(0,0,0,0.4);
         padding: 0.7rem 2rem 0.5rem 2rem;
-        border-radius: 0.75rem;
         grid-column: span 5 / span 1;
         margin-top: 1.7rem;
     }
-    
+    .titulos {
+        padding: 10rem 0rem 4rem 0rem;
+    }
     .descripciones {
         grid-column: span 7 / span 1; 
     }

@@ -1,16 +1,10 @@
 import "../css/whyInnovados.css"
-import support from "../../../assets/whyInnovados/support.svg"
-import security from "../../../assets/whyInnovados/security.svg"
-import scalability from "../../../assets/whyInnovados/scalability.svg"
-import block from "../../../assets/whyInnovados/block.svg"
-import responsive from "../../../assets/whyInnovados/responsive.svg"
-import diseño from "../../../assets/whyInnovados/diseño.svg"
-import avion from "../../../assets/whyInnovados/avion.svg"
-import search from "../../../assets/whyInnovados/search.svg"
-
+import { Link } from "react-router-dom"
+import Cards from "./Cards"
 
 const WhyInnovados = () => {
   return (
+    <>
     <div className="contenedorWhy" id="sobrenosotros">
         <div className="izquierda">
             <h1>¿Por qué Innovados?</h1>
@@ -20,104 +14,17 @@ const WhyInnovados = () => {
         </div>
 
         <div className="derecha">
-            {/*** PRIMER Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={support} alt="Ilustración de Adaptación" className="imagen" />
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Soporte Técnico
-                    </p>
-                </div>
-            </div>
-
-            {/*** SEGUNDA Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={security} alt="Ilustración de diseño" className="imagen"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Seguridad de datos
-                    </p>
-                </div>
-            </div>
-
-            {/*** TERCER Tarjeta 
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={scalability} alt="Ilustración de Velocidad" className="imagen"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Escalabilidad sin límites
-                    </p>
-                </div>
-            </div>
-***/}
-            {/*** CUARTA Tarjeta 
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={block} alt="Ilustración de Optimización" className="imagen"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Integración eficiente
-                    </p>
-                </div>
-            </div>
-***/}
-            {/*** QUINTA Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={responsive} alt="Ilustración de Adaptación" className="imagen" />
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Páginas Web adaptativas
-                    </p>
-                </div>
-            </div>
-
-            {/*** SEXTA Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={diseño} alt="Ilustración de diseño" className="imagen"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Diseño intuitivo y amigable
-                    </p>
-                </div>
-            </div>
-
-            {/*** SEPTIMA Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={avion} alt="Ilustración de Velocidad" className="imagen"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Velocidad y funcionalidad
-                    </p>
-                </div> 
-            </div>
-
-            {/*** OCTAVA Tarjeta ***/}
-            <div className="derechaDiv">
-                <div className="">
-                    <img src={search} alt="Ilustración de Optimización" className="imagenSEO"/>
-                </div>
-                <div className=''>
-                    <p className="derechaP">
-                        Posicionamiento SEO
-                    </p>
-                </div>
-            </div>
+            <Cards />
         </div>
     </div>
+    
+    <div className="imagenPresupuestoWhy">
+        <h1>¿No sabes cómo empezar? ¡Escribinos!</h1>
+        <p>Es más fácil de lo que crees, nosotros nos encargamos de todo.</p>
+        <Link to="/estimate" className='botonImagenPresupuestoAboutWhy'>Pide tu presupuesto</Link>
+    </div>
+    </>
   )
 }
 
-export default WhyInnovados
+export default WhyInnovados;

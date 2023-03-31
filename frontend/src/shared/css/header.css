@@ -1,5 +1,5 @@
 .header {
-    background-color: rgba(8, 31, 69, 0.859);
+    background-color: transparent;
     height: 100%;
     position: fixed;
     top: 0;
@@ -36,7 +36,7 @@
 }
 
 .linkLogo span {
-    color: #ca252ad9;
+    color: var(--logo-span);
     font-size: 1.6rem;
 }
 
@@ -48,34 +48,31 @@
 
 .links {
     text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 400;
     letter-spacing: 2px;
     color: #eee;
-    font-size: 1rem;
     line-height: 2rem;
     display: flex;
     align-items: center;
     transition: all 300ms ease-in-out;
     margin-top: 3rem;
-    font-family: "Open Sans", "sans-serif";
+    font-family: "Poppins", "sans-serif";
 }
 
 .links:hover {
-    color: #cf336e;
-    transition: all;
-    transition-duration: 200ms;
-    transform: translateY(0.2rem);
-    transition: all 300ms ease-in-out;
+    color: var(--header-links-hover);
+    transform: translateY(0.1rem);
+    transition: all 200ms ease-in-out;
 }
 .linkPresupuesto {
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 2rem;
-    font-family: "Chakra Petch";
-    background-color: #ca252a81;
+    background-color: var(--boton-presupuesto);
     padding: 0rem 1.3rem;
     border-radius: 0.75rem;
     display: block;
@@ -83,18 +80,13 @@
     box-sizing: border-box;
     transition: all 300ms ease-in-out;
     margin-top: 3rem;
-    font-family: "Open Sans", "sans-serif";
+    font-family: "Poppins", "sans-serif";
     border: none;
-}
-.linkPresupuesto:hover {
-    background-color: #ca252aaa;
-    transition: all;
-    transition-duration: 300ms;
     cursor: pointer;
 }
 
 .header.scroll {
-    background-color: rgba(8, 31, 69, 0.859);
+    background-color: var(--header);
     transition: all;
     transition-duration: 700ms;
 }
@@ -116,7 +108,7 @@
         background-color: transparent;
         height: auto;
         width: 100%;
-        padding: 0 8rem;
+        padding: 0 4rem;
     }
     .sidebarLeftFull{
         left: 0;
@@ -137,4 +129,10 @@
     .linkPresupuesto{
         margin-top: 0;
     }
+}
+@media (min-width: 1280px) {
+    .header{
+        padding: 0 8rem;
+    }
+
 }

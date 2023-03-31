@@ -10,16 +10,15 @@ export const Header = () => {
   return (
     <header className={`header ${sidebar ? 'sidebarLeft0' : 'sidebarLeftFull'} ${scrolled ? 'scroll' : ''}`}>
       <nav className='navegacion'>
-
         <ul className='logo'>
-          <Link to='/' className='linkLogo'>
+          <Link to="/" className='linkLogo'>
             Innova<span className='linklogospan'>dos</span>
           </Link>
         </ul>
-
+{/* REEMPLAZAR POR NAVLINK */}
         <ul className='opciones'>
           <li>
-            <Link className='links'>
+            <Link to="/services" className='links'>
               Servicios
             </Link>
           </li>
@@ -29,12 +28,12 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="#sobrenosotros" className='links'>
+            <a href="/#sobrenosotros" className='links'>
               Sobre Nosotros
             </a>
           </li>
           <li>
-            <Link className='linkPresupuesto'>
+            <Link to="/estimate" className='linkPresupuesto'>
               Pedir Presupuesto
             </Link>
           </li>

@@ -2,15 +2,13 @@ import "../css/footer.css"
 import sitioweb from "../../assets/assetsPresentation/WWW.png"
 
 export const Footer = () => {
-
-
     return (
         <footer className="footer">
 
             <div className="logoFooter">
                 <p>Innova<span>dos</span></p>
                 <div className="contenedorImgFooter">
-                            <img src={sitioweb} className="imgFooter"  />
+                            <img src={sitioweb} alt="logo sitio web www" className="imgFooter"  />
                 </div>
             </div>
 
@@ -35,3 +33,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer;

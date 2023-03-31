@@ -1,0 +1,106 @@
+
+.divFormEstimate{
+    padding: 3rem 1rem 3rem 1rem;
+}
+.formularioEstimate {
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem 1rem 3rem 1rem;
+    box-shadow: 1px 1px 3px #555;
+}
+.formularioEstimate input{
+    box-sizing: border-box;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0.7rem 0 0.7rem 0;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    color: #222;
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+}
+
+.formularioEstimate input::placeholder{
+    color: #999;
+}
+.formularioEstimate select{
+    box-sizing: border-box;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0.7rem 0 0.7rem 0;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 0.5rem;
+    color: #222;
+    outline: none;
+    font-family: "Poppins", "sans-serif";
+    cursor: pointer;
+}
+.textareaFormEstimate {
+    margin: 0.7rem 0 0.7rem 0;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    outline: none;
+    border-radius: 0.4rem;
+    border: 1px solid #999;
+    box-shadow: 0px 0px 1px #555;
+    font-family: "Poppins", "sans-serif";
+}
+.textareaFormEstimate::placeholder{
+    color: #999;
+}
+.buttonFormEstimate{
+    margin-top: 1rem;
+    background-color: var(--cajas-titulos-boton);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    font-family: "Open Sans", "sans-serif";
+    box-shadow: 0px 2px 5px #555;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px){
+    .divFormEstimate{
+        padding: 4rem 8rem 4rem 8rem;
+    }
+    .formularioEstimate {
+        padding: 3rem 0rem 3rem 0rem;
+    }
+    
+    .formularioEstimate input{
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin: 0.7rem 0 0.7rem 0;
+        padding: 0.6rem 1rem 0.6rem 1rem;
+        width: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .divFormEstimate{
+        padding: 4rem 17rem 4rem 17rem;
+    }
+    
+    .formularioEstimate input{
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 0.6rem 1rem 0.6rem 1rem;
+        margin: 0.7rem auto 0.7rem auto;
+    }
+}
+@media (min-width: 1280px) {
+    .divFormEstimate{
+        padding: 4rem 24rem;
+    }
+    
+}

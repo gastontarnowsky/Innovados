@@ -1,0 +1,130 @@
+
+.seccion{
+    padding: 3rem 0rem;
+}
+.titulo{
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--titulo-solutions);
+}
+.titulo h3{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--titulo-solutions);
+}
+.contenedorCajas {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 1rem 0;
+}
+.cajas{
+    margin: 0rem 1rem;
+    padding: 2rem 1rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    text-align: left;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+.cajas:hover{
+    border: 1px solid var(--cajas-titulos-boton);
+    cursor: pointer;
+}
+.cajas p {
+    font-size: 0.9rem;
+    font-family: "Open Sans", "sans-serif";
+    color: #666;
+    font-weight: 400;
+}
+
+#sitiosweb:target {
+    scroll-margin-top: 10rem;
+}
+#CMS:target {
+    scroll-margin-top: 10rem;
+}
+#ERP:target {
+    scroll-margin-top: 10rem;
+}
+#CRM:target {
+    scroll-margin-top: 18rem;
+}
+#APPS:target {
+    scroll-margin-top: 18rem;
+}
+#ECommerce:target {
+    scroll-margin-top: 18rem;
+}
+
+.tituloImagen{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+}
+.tituloImagen h3 {
+    font-size: 1.1rem;
+    color:var(--cajas-titulos-boton);
+    font-family: 'Poppins', sans-serif;
+}
+.tituloImagen img{
+    width: 3rem;
+    height: 3rem;
+    filter:contrast(90%);
+    transition: all 1s ease-out;
+}
+.tituloImagen2 img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+@media (min-width: 768px){
+    .seccion{
+        padding: 3rem 2rem;
+    }
+    .titulo{
+        font-size: 1rem;
+    }
+    .contenedorCajas{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 2rem 0;
+    }
+    .cajas{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .seccion{
+        padding: 3rem 4rem;
+
+    }
+    .titulo{
+        padding: 0 7rem;
+        font-size: 1.2rem;
+    }
+    .contenedorCajas{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .cajas{
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 1rem;
+    }
+    .cajas p{
+        font-size: 1.05rem;
+    }
+}
+@media (min-width: 1280px) {
+    .seccion{
+        padding: 3rem 8rem;
+    }
+    .titulo{
+        padding: 0 10rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,3 +1,17 @@
+:root {
+  --boton-presupuesto: #ca252a81;
+  --boton-info-services: #86080caf;
+  --header-links-hover: #cf336e;
+  --logo-span: #ca252ad9;
+  --h3-presentation: #ca252aec;
+  --icon-form-presentation: #e2292fcd;
+
+  --header: #081f45db;
+  --cajas-titulos-boton: #0c2f67d1;
+
+  --titulo-solutions: #444;
+  --footer-bg: #191d24;
+}
 html {
   scroll-behavior: smooth;
 }

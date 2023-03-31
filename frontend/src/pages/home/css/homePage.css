@@ -4,7 +4,7 @@
     right: 0;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    background-color: #ca252aaa;
+    background-color: var(--h3-presentation);
     padding: 0.5rem;
     color: #fff;
     border: none;
